@@ -336,4 +336,13 @@ for i in l:
     print("ID REcepta: {}".format(i[3]),file=f)
 f.close()
 
+l=funkcija_all()
+print(l)
+f=open('recepti.txt','a')
+for i in l:
+    print("ID Recepta: {}".format(i[0]),file=f)
+    print("Naziv: {}".format(i[1]),file=f)
+    print("Cena: {}".format(i[2]),file=f)
+    print("Porcija: {}".format(i[3]),file=f)
+f.close()
 
